@@ -115,14 +115,12 @@ form{
 }
 #social-media{
     padding-bottom:22px;
-    display: flex;
-    gap:30px;
     color: hsl(223, 87%, 63%);
 }
 #social-media li{
     width: 30px;
     height: 30px;
-    border: 1px solid hsl(0, 0%, 59%);
+    border: 1px solid hsl(0, 1%, 84%);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -133,6 +131,12 @@ form{
 #social-media li:hover{
     color:white;
     background-color:  hsl(223, 87%, 63%);
+}
+.list{
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    list-style: none;
 }
 footer{
     color:#888888;
