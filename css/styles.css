@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    font-family: 'Libre Franklin', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input{
+    outline: none;
+}
+input:focus{
+    border-color:hsl(223, 87%, 63%);
+}
+.error-txt{
+    color: hsl(354, 100%, 66%);
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 5px;
+    display: none;
+}
+.field.error input{
+    border-color: hsl(354, 100%, 66%);
+}
+.correct{
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 5px;
+    display: none;
+}
+.correct{
+    display: block;
+    border-color: hsl(120, 33%, 48%);
+    color:hsl(120, 33%, 48%);
+}
+.field.error .error-txt{
+    display: block;
+    font-size: 0.rem;
+}
+body{
+   padding:5% 0 3% 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ping-logo{
+    padding-bottom:40px;
+    font-size:1.25rem;
+}
+.ping-logo, .title .soon{
+    font-weight: 700;
+    color:black;
+}
+.dot{
+    color:hsl(223, 87%, 63%);
+}
+.title{
+    color:hsl(0, 0%, 59%);
+    font-weight: 300;
+    padding-bottom:18px;
+}
+.subscribe{
+    /* font-weight:600; */
+    opacity:0.9;
+    padding-bottom:43px;
+}
+#searchbox{
+    padding-bottom:90px;
+}
+form{
+    display: flex;
+    gap:16px;
+}
+.mail, .submit{
+    border:1px solid hsl(223, 100%, 88%);
+    border-radius: 27.5px;
+    height:57px;
+}
+.mail{
+    display: inline-block;
+    /* padding:0 0 0 16px; */
+    padding:16px 20px;
+}
+.submit{
+    color:white;
+    background-color: hsl(223, 87%, 63%);
+    font-weight: 600;
+    padding:16px 55px;
+    box-shadow:0px 7px 10px 0px #0000002e;
+}
+.submit:hover{
+    cursor: pointer;
+    opacity:0.8;
+}
+.invisible{
+    display: none;
+}
+#chart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 68px;
+}
+.pic{
+  width:45%;
+}
+#social-media{
+    padding-bottom:22px;
+    display: flex;
+    gap:30px;
+    color: hsl(223, 87%, 63%);
+}
+#social-media li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+#social-media li:hover{
+    color:white;
+    background-color:  hsl(223, 87%, 63%);
+}
+footer{
+    color:#888888;
+    font-size: 0.8rem;;
+}
+
+
+
+@media only screen and (max-width:1000px){
+    
+    body{
+        padding:15% 0 10% 0;
+    }
+    #searchbox{
+        margin:0 20%;
+        width: 85%;
+    }
+    .mail,.submit{
+        width: 100%;
+    }
+    /* .mail{
+        padding:16px 20px;
+    } */
+    /* .submit{
+        transition: .4s ease all;
+    } */
+   .search{
+    display: flex;
+    flex-direction: column;
+   } 
+   .pic{
+    max-width: 400px;
+    width: 100%;
+   }
+}
