@@ -32,6 +32,7 @@ input:focus{
     display: block;
     border-color: hsl(120, 33%, 48%);
     color:hsl(120, 33%, 48%);
+    text-align: center;
 }
 .field.error .error-txt{
     display: block;
@@ -157,12 +158,6 @@ footer{
     .mail,.submit{
         width: 100%;
     }
-    /* .mail{
-        padding:16px 20px;
-    } */
-    /* .submit{
-        transition: .4s ease all;
-    } */
    .search{
     display: flex;
     flex-direction: column;
